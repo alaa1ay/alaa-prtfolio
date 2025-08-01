@@ -1,5 +1,8 @@
 /* إعدادات عامة */
 body {
+    direction: rtl;
+  text-align: right;
+
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2a2a2a);
