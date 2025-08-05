@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>شكرًا لك</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -10,6 +11,10 @@
       --main-color: #d4af37;
       --bg-color: #121212;
       --text-color: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -22,6 +27,7 @@
       align-items: center;
       height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
     .message-box {
@@ -30,7 +36,7 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       max-width: 500px;
-      width: 90%;
+      width: 100%;
     }
 
     h1 {
@@ -58,6 +64,37 @@
     a:hover {
       background-color: #bfa133;
       transform: scale(1.05);
+    }
+
+    /* 📱 استجابة للشاشات الصغيرة */
+    @media (max-width: 480px) {
+      .message-box {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      a {
+        padding: 10px 20px;
+        font-size: 0.95em;
+      }
+    }
+
+    /* 💻 استجابة للشاشات المتوسطة */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
     }
   </style>
 </head>
