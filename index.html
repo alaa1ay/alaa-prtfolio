@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    
+     
   <header>
     <h1>علاء</h1>
     <p>مطوّر ويب ومصمم واجهات</p>
@@ -50,12 +52,17 @@
 
   <section id="contact">
     <h2>تواصل معي</h2>
-    <form>
-      <input type="text" placeholder="اسمك" required>
-      <input type="email" placeholder="بريدك الإلكتروني" required>
-      <textarea placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
+    <form action="https://formsubmit.co/adoulalaa519@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="اسمك" required>
+        <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+        <textarea name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+        <button type="submit">إرسال</button>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value=" https://alaa1ay.github.io/alaa-prtfolio//thank-you.html">
+      </form>
+
   </section>
 
   <footer>
