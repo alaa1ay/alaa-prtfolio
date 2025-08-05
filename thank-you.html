@@ -3,27 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>شكرًا لك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-color: #d4af37;
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f0f0;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      padding: 50px;
     }
-    .message {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      display: inline-block;
+
+    .message-box {
+      background-color: rgba(18, 18, 18, 0.9);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      max-width: 500px;
+      width: 90%;
     }
+
     h1 {
-      color: #28a745;
+      color: var(--main-color);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: var(--main-color);
+      color: #121212;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #bfa133;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="message">
+  <div class="message-box">
     <h1>✅ تم إرسال رسالتك بنجاح</h1>
     <p>شكرًا لتواصلك معنا، سنرد عليك في أقرب وقت ممكن.</p>
     <a href="index.html">العودة إلى الصفحة الرئيسية</a>
